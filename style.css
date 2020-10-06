@@ -1,18 +1,22 @@
 
 body {
 	font-family: 'Raleway', sans-serif;
-	width: 80%;
 	margin: auto;
 }
 
 header {
-	width: 80%;
+	width: 100%;
 	padding-top: 25px;
 	position: fixed;
 	display: flex;
 	justify-content: space-between;
 	background-color: white;
 	color: #0065FC;
+}
+
+main {
+	width: 90%;
+	margin: auto;
 }
 
 h2 {
@@ -33,10 +37,12 @@ height: auto;
 display: flex;
 flex-direction: row;
 align-items: baseline;
+padding-left: 5%;
 }
 
 #navbar {
 	display: flex;
+	margin-right: 5%;
 	
 }
 
@@ -47,6 +53,7 @@ align-items: baseline;
 
 #top-search {
 	padding: 70px 0px 0px 0px;
+
 }
 
 #search-city {
@@ -101,7 +108,7 @@ flex: 1.2;
 }
 
 .nav-button {
-	float: left;
+float: left;
   display: block;
   text-align: center;
   padding: 10px 50px;
@@ -155,6 +162,13 @@ width: 30%;
   margin: 0 5px;
   margin-bottom: 10px;
 
+}
+
+.hotel-image {
+	height: 150px;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 16px 16px 0px 0px;
 }
 
 .popular-hotel {
