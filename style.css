@@ -12,6 +12,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	background-color: white;
+	color: #0065FC;
 }
 
 h2 {
@@ -39,12 +40,23 @@ align-items: baseline;
 	
 }
 
+#search-form {
+	display: flex;
+	align-content: flex-start;
+}
+
 #top-search {
 	padding: 70px 0px 0px 0px;
 }
 
 #search-city {
-	width: 
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	border-right: none;
+    border-left: none;
+	border-color: #F2F2F2;
+	padding: 16px 16px;
+	font-weight: bold; 
 }
 
 #filter {
@@ -52,6 +64,14 @@ display: flex;
 justify-content: flex-start;
 gap: 15px;
 margin-top: 20px;
+}
+
+#filter-name {
+	display: flex;
+	border: 2px solid;
+	border-color: #F2F2F2;
+	border-radius: 30px;
+	margin-right: 10px;
 }
 
 #hotel-overview {
@@ -63,8 +83,21 @@ flex: 3;
 
 }
 
+#hotel-tile {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 -5px;
+}
+
 #most-popular {
 flex: 1.2;
+	margin-left: 30px;
+}
+
+#popular-hotel-list {
+	
 }
 
 .nav-button {
@@ -76,10 +109,40 @@ flex: 1.2;
   font-size: 15px;
 }
 
+.fa-map-marker-alt {
+	background-color: #F2F2F2;
+	padding: 16px 16px;
+	border-radius: 16px 0 0 16px;
+}
+
+.submit-search {
+	color: white;
+	padding: 15px 15px;
+	background-color: #0065FC;
+	border: none;
+	border-radius: 0 16px 16px 0;
+	font-size: 16px;
+}
+
+.filter-icon {
+	display: flex;
+	background-color: #DEEBFF;
+	color: #0065FC;
+	border-radius: 100%;
+	align-items: center;
+	justify-content: center;
+	padding: 15px;
+}
+
 .filter-button {
 width: auto;
 height: auto;
 padding: 10px 10px 10px 10px;
+border: none;
+background-color: white;
+border-radius: 16px;
+margin-top: 2px;
+font-weight: bold;
 }
 
 .hotel-list {
@@ -89,13 +152,26 @@ width: 30%;
   margin-bottom: 25px;
   border-radius: 10px;
   padding: 5px 5px 5px 5px;
-
+  margin: 0 5px;
+  margin-bottom: 10px;
 
 }
 
 .popular-hotel {
-	
+width: auto;
+height: 150px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  border-radius: 10px;
+  padding: 5px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
+  margin: 0 5px;
+  margin-bottom: 10px;
+  display: flex;
+ 
 }
+
 
 
 
