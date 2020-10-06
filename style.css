@@ -83,11 +83,15 @@ margin-top: 20px;
 
 #hotel-overview {
 display: flex;
+flex-wrap: wrap;
+
 }
 
 #hotels {
 flex: 3;
-
+background-color: #F2F2F2;
+padding:10px 30px;
+border-radius: 20px;
 }
 
 #hotel-tile {
@@ -99,13 +103,40 @@ flex: 3;
 }
 
 #most-popular {
-flex: 1.2;
+flex: 1;
 	margin-left: 30px;
+	background-color: #F2F2F2;
+padding:10px 30px;
+border-radius: 20px;
+grid-row-gap: 30px;
 }
 
 #popular-hotel-list {
 	
 }
+
+#activity {
+
+}
+
+
+#activity-list {
+
+}
+
+
+#footer1 {
+
+}
+
+#footer2 {
+
+}
+
+#footer3 {
+	
+}
+
 
 .nav-button {
 float: left;
@@ -164,6 +195,10 @@ width: 30%;
 
 }
 
+.fa-star {
+	color: #0065FC;
+}
+
 .hotel-image {
 	height: 150px;
 	width: 100%;
@@ -183,8 +218,27 @@ height: 150px;
   margin: 0 5px;
   margin-bottom: 10px;
   display: flex;
+  column-gap: 5px;
+  margin: 30px 0px;
  
 }
+
+.popular-hotel-img {
+	height: 100%;
+	width: 150px;
+	object-fit: cover;
+	border-radius: 16px 0px 0px 16px;
+}
+
+.activity-tile {
+
+}
+
+.activity-img {
+
+}
+
+
 
 
 
