@@ -58,17 +58,23 @@ padding-left: 5%;
 #navbar {
 	display: flex;
 	margin-right: 5%;
+	color: #0065FC;
 	
+}
+
+#navbar > a:hover {
+	border-top: 3px solid #0065FC;
+
 }
 
 #search-form {
 	display: flex;
 	align-content: flex-start;
+	background-att: 
 }
 
 #top-search {
 	padding: 70px 0px 0px 0px;
-
 }
 
 #search-city {
@@ -132,12 +138,14 @@ grid-row-gap: 30px;
 }
 
 #activity {
-
+margin-top: 3em;
 }
 
 
 #activity-list {
-
+display: grid;
+grid-template-columns: repeat(4, 25%);
+grid-template-rows: 200px 200px;
 }
 
 
@@ -250,10 +258,31 @@ height: 150px;
 
 }
 
-.activity-img {
-
+.act-tile-1 {
+	grid-row: 1/span 2;
 }
 
+.act-tile-3 {
+	grid-column: 2/span 1;
+	grid-row: 2/span 1;
+}
+
+.act-tile-6 {
+	grid-column: 4/span 1;
+	grid-row: 2/span 1;
+}
+
+.activity-img {
+height: 150px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.activity-img-long {
+height: 350px;
+	width: 100%;
+	object-fit: cover;
+}
 
 
 
