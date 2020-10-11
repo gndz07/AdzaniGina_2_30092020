@@ -234,7 +234,7 @@ grid-row-gap: 30px;
 }
 
 
-/* End of header media queries */
+/* End of hotel overview media queries */
 
 
 #activity {
@@ -248,6 +248,50 @@ grid-template-columns: repeat(4, 25%);
 grid-template-rows: 230px 230px;
 margin-top: 20px;
 }
+
+
+/* Media queries for activity */
+
+
+/* for Smartphone */
+
+@media all and (max-width: 768px) {
+	#activity-list {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.activity-tile .activity-img-long {
+		height: 150px;
+	}
+
+	#activity-list .activity-tile {
+		margin: 10px 5px;
+	}
+
+}
+
+/* for Tablet */
+
+@media all and (min-width : 768px) and (max-width : 1024px) {
+	#activity-list {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	.activity-tile .activity-img-long {
+		height: 200px;
+	}
+
+	.activity-tile .activity-img {
+		height: 200px;
+	}
+
+
+}
+
+/* End of activity media queries */
 
 
 #footer1 {
