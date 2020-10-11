@@ -65,6 +65,7 @@ align-items: baseline;
 padding-left: 5%;
 margin-top: 20px;
 margin-bottom: 5px;
+
 }
 
 #navbar {
@@ -82,6 +83,20 @@ margin-bottom: 5px;
 #navbar > a {
 	padding-top: 30px;
 }
+
+
+/* Media queries for heading */
+
+
+/* for Smartphone */
+
+@media all and (max-width: 768px) {
+
+
+}
+
+/* End of header media queries */
+
 
 
 #search-form {
@@ -159,6 +174,68 @@ grid-row-gap: 30px;
 #popular-hotel-list {
 	
 }
+
+
+/* Media queries for hotel overview */
+
+
+/* for Smartphone */
+
+@media all and (max-width: 768px) {
+
+#hotels {
+	margin-top: 20px;
+}
+
+#hotel-overview {
+	flex-direction: column-reverse;
+}
+
+#hotel-tile {
+	flex-direction: column;
+}
+
+#hotel-tile > .hotel-list {
+	width: auto;
+	height: auto;
+	margin-bottom: 10px;
+
+}
+
+#most-popular {
+	margin-left: 0px;
+}
+
+}
+
+
+/* For tablet */
+
+@media all and (min-width : 768px) and (max-width : 1024px) {
+
+#hotel-overview {
+	flex-direction: column-reverse;
+}
+
+#hotels {
+	margin-top: 10px;
+}
+
+#hotel-tile > .hotel-list {
+	width: 45%;
+	margin: 10px 10px;
+
+}
+
+#most-popular {
+	margin-left: 0px;
+}
+
+}
+
+
+/* End of header media queries */
+
 
 #activity {
 margin-top: 3em;
