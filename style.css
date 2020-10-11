@@ -13,6 +13,12 @@ header {
 	color: #0065FC;
 }
 
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
 main {
 	width: 90%;
 	margin: auto;
@@ -30,6 +36,7 @@ h2 {
 
 h3 {
 	font-size: 15px;
+	font-weight: bold;
 }
 
 h3 + p {
@@ -51,10 +58,33 @@ footer ul {
 	line-height: 2em;
 }
 
-a {
-	text-decoration: none;
-	color: inherit;
+
+
+
+/* Media queries for hotel overview */
+
+
+/* for Smartphone */
+
+@media all and (max-width: 768px) {
+	footer {
+		flex-direction: column;
+		grid-gap: 1em;
+	}
 }
+
+/* for Tablet */
+
+@media all and (min-width : 768px) and (max-width : 1024px) {
+	footer {
+		grid-gap: 4em;
+	}
+}
+
+
+/* End of Footer media queries */
+
+
 
 #logo {
 width: 90px;
@@ -294,17 +324,9 @@ margin-top: 20px;
 /* End of activity media queries */
 
 
-#footer1 {
 
-}
 
-#footer2 {
 
-}
-
-#footer3 {
-	
-}
 
 
 .nav-button {
