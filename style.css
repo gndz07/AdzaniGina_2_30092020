@@ -7,10 +7,12 @@ body {
 header {
 	width: 100%;
 	position: fixed;
-	display: flex;
-	justify-content: space-between;
 	background-color: white;
 	color: #0065FC;
+	display: grid;
+	align-items: center;
+	grid-template-columns: auto 1fr auto auto;
+	grid-template-areas: "logo . navbar register"
 }
 
 
@@ -61,7 +63,7 @@ footer ul {
 
 
 
-/* Media queries for hotel overview */
+/* Media queries for Footer */
 
 
 /* for Smartphone */
@@ -87,27 +89,26 @@ footer ul {
 
 
 #logo {
-width: 90px;
-height: 42px;
-display: flex;
-flex-direction: row;
-align-items: baseline;
-padding-left: 5%;
-margin-top: 20px;
-margin-bottom: 5px;
-
+	grid-area: logo;
+	width: 90px;
+	height: 42px;
+	margin: 0 30px;
+	padding-left: 2vw;
+	padding-top: 1.5vw;
+	position: fixed;
 }
 
 #navbar {
 	display: flex;
-	margin-right: 5%;
-	color: #0065FC;
+	color: black;
+	grid-area: navbar;
 	
 }
 
+
 #navbar > a:hover {
 	border-top: 3px solid #0065FC;
-
+	color: #0065FC;
 }
 
 #navbar > a {
@@ -122,6 +123,26 @@ margin-bottom: 5px;
 
 @media all and (max-width: 768px) {
 
+	header {
+		grid-template-columns: auto 1fr auto;
+		grid-template-areas:
+		"logo . register"
+		"navbar navbar navbar";
+	}
+
+
+	.nav-button {
+		width: 50vw;
+		text-align: center;
+		border-bottom: 3px solid;
+		border-color: #F2F2F2;
+	}
+
+	#navbar > a:hover {
+	border-bottom: 3px solid #0065FC;
+	border-top: 0px;
+
+}
 
 }
 
@@ -160,7 +181,7 @@ margin-top: 2em;
 	margin-right: 20px;
 }
 
-#filter-name {
+.filter-name {
 	display: flex;
 	border: 2px solid;
 	border-color: #F2F2F2;
@@ -170,19 +191,24 @@ margin-top: 2em;
 	padding-right: 20px;
 }
 
+
 /* Media queries for filter */
 
 /* for Smartphone */
 
 @media all and (max-width: 768px) {
+	
+	#top-search {
+		padding-top: 90px;
+	}
+
 	#filter {
 		flex-direction: column;
 	}
 
-	#filter-name {
+	.filter-name {
 		width: fit-content;
 		margin-bottom: 20px;
-		
 	
 	}
 
@@ -192,6 +218,8 @@ margin-top: 2em;
 	}
 
 }
+
+/* End of media queries */
 
 
 
@@ -369,7 +397,19 @@ float: left;
   padding: 10px 50px;
   text-decoration: none;
   font-size: 15px;
+  
 }
+
+.register-btn {
+	grid-area: register;
+	color: #0065FC;
+	font-weight: bold;
+	margin: 0 2em;
+	margin-right: 2vw;
+	padding: 15px 15px 0px 15px;
+	
+}
+
 
 .fa-map-marker-alt {
 	background-color: #F2F2F2;
