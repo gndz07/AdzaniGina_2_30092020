@@ -92,10 +92,10 @@ footer ul {
 	grid-area: logo;
 	width: 90px;
 	height: 42px;
-	margin: 0 30px;
+	margin-left: 2.5vw;
 	padding-left: 2vw;
 	padding-top: 1.5vw;
-	position: fixed;
+
 }
 
 #navbar {
@@ -405,7 +405,7 @@ float: left;
 	color: #0065FC;
 	font-weight: bold;
 	margin: 0 2em;
-	margin-right: 2vw;
+	margin-right: 3vw;
 	padding: 15px 15px 0px 15px;
 	
 }
