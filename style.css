@@ -451,12 +451,12 @@ font-weight: bold;
 
 
 .hotel-list {
-width: 30%;
+width: 250px;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 25px;
   border-radius: 1em;
-  padding: 5px 5px;
+  padding: 5px 5px 10px 5px;
   margin: 0 10px;
   margin-bottom: 30px;
   margin-top: 20px;
@@ -466,6 +466,7 @@ width: 30%;
 .caption {
 	color: black;
 	line-height: 0.5em;
+	
 }
 
 .fa-star {
@@ -513,10 +514,12 @@ height: 150px;
 .caption-popular {
 	color: black;
 	line-height: 1em;
+	width: 150px;
+	margin-left: 15px;
 }
 
 .popular-star {
-	padding-top: 2em;
+	padding-top: 37px;
 }
 
 
