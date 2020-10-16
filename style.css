@@ -199,7 +199,7 @@ margin-top: 2em;
 @media all and (max-width: 768px) {
 	
 	#top-search {
-		padding-top: 90px;
+		padding-top: 120px;
 	}
 
 	#filter {
@@ -350,6 +350,7 @@ margin-top: 20px;
 	#activity-list {
 		display: flex;
 		flex-direction: column;
+	
 	}
 
 	.activity-tile .activity-img-long {
@@ -434,6 +435,7 @@ float: left;
 	align-items: center;
 	justify-content: center;
 	padding: 15px;
+	margin-inline-start: -5px;
 }
 
 .filter-button {
@@ -447,11 +449,19 @@ margin-top: 2px;
 font-weight: bold;
 }
 
+.fa-info {
+	color: #0065FC;
+	margin-right: 10px;
+	border-radius: 100%;
+	border: 1px solid #F2F2F2;
+	padding: 5px 10px;
+}
+
 
 
 
 .hotel-list {
-width: 250px;
+width: 220px;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 25px;
