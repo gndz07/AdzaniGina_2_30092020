@@ -181,6 +181,11 @@ margin-top: 2em;
 	margin-right: 20px;
 }
 
+#filter-content :hover {
+	background-color: #0065FC;
+	color: white;
+}
+
 .filter-name {
 	display: flex;
 	border: 2px solid;
@@ -189,7 +194,9 @@ margin-top: 2em;
 	margin-right: 10px;
 	width: auto;
 	padding-right: 20px;
+	
 }
+
 
 
 /* Media queries for filter */
@@ -211,6 +218,8 @@ margin-top: 2em;
 		margin-bottom: 20px;
 	
 	}
+
+
 
 	#filter-content {
 		display: flex;
@@ -350,7 +359,7 @@ margin-top: 20px;
 	#activity-list {
 		display: flex;
 		flex-direction: column;
-	
+
 	}
 
 	.activity-tile .activity-img-long {
