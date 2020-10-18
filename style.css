@@ -179,6 +179,7 @@ margin-top: 2em;
 #filter-content {
 	display: flex;
 	margin-right: 20px;
+	cursor: pointer;
 }
 
 #filter-content :hover {
@@ -456,6 +457,7 @@ background-color: white;
 border-radius: 16px;
 margin-top: 2px;
 font-weight: bold;
+cursor: pointer;
 }
 
 .fa-info {
