@@ -2,7 +2,7 @@
 <html lang="fr">
 	<head>
 		<meta charset="utf-8">
-		<meta name=viewport content="width=device-width, initial-scale=0.8">
+		<meta name=viewport content="width=device-width, initial-scale=0.8, maximum-scale=0.8">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
 		<script src="https://kit.fontawesome.com/6b2f05754f.js" crossorigin="anonymous"></script>
@@ -22,7 +22,7 @@
 				<a href="#hotel-overview" class="nav-button">Hébergements</a>
 				<a href="#activity" class="nav-button">Activités</a>
 				</nav>
-				<a href="#" class="register-btn"><strong>S'inscrire</strong></a>
+				<a href="#" class="register-btn"><span>S'inscrire</span></a>
 			
 		</header>
 
@@ -39,6 +39,7 @@
 				<i class="fas fa-map-marker-alt"></i>
 				<input type="search" name="search-city" id="search-city" value="Marseille, France" />
 				<input class="submit-search" type="submit" value="Rechercer"/>
+				<button class="submit-search-mobile" type="submit"><i class="fas fa-search"></i></button>
 			</form>
 
 		<div id="filter">
@@ -91,18 +92,18 @@
 			
 		
 			<figure class="hotel-list">
-				<a href="#" >
+				<a href="#">
 				<img class="hotel-image" src="images/cannebieres.jpg" alt="Auberge La Cannebière" />
 				<div class="caption">
 					<h3>Auberge La Cannebière</h3>
-					<p>Nuit à partir de <strong>25€</strong></p>
+					<p>Nuit à partir de <span>25€</span></p>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
-						<i class="far fa-star"></i>
+						<i class="fas fa-star star-empty"></i>
 					</div>
-				</a>	
+				</a>
 			</figure>
 
 
@@ -112,7 +113,7 @@
 				<img class="hotel-image" src="images/duport.jpg" alt="Hôtel du Port" />
 				<div class="caption">
 					<h3>Hôtel du Port</h3>
-					<p>Nuit à partir de 52<strong>€</strong></p>
+					<p>Nuit à partir de 52<span>€</span></p>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
@@ -128,12 +129,12 @@
 				<img class="hotel-image" src="images/mouettes.jpg" alt="Hôtel Les Mouettes" />
 				<div class="caption">
 					<h3>Hôtel Les Mouettes</h3>
-					<p>Nuit à partir de 76<strong>€</strong></p>
+					<p>Nuit à partir de 76<span>€</span></p>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
-						<i class="far fa-star"></i>
+						<i class="fas fa-star star-empty"></i>
 					</div>
 				</a>
 			</figure>
@@ -144,12 +145,12 @@
 				<img class="hotel-image" src="images/lamer.jpg" alt="Hôtel de la mer" />
 				<div class="caption">
 					<h3>Hôtel de La Mer</h3>
-					<p>Nuit à partir de 46<strong>€</strong></p>
+					<p>Nuit à partir de 46<span>€</span></p>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
-						<i class="far fa-star"></i>
-						<i class="far fa-star"></i>
+						<i class="fas fa-star star-empty"></i>
+						<i class="fas fa-star star-empty"></i>
 					</div>
 				</a>
 			</figure>
@@ -160,12 +161,12 @@
 				<img class="hotel-image" src="images/panier.jpg" alt="Auberge le panier" />
 				<div class="caption">
 					<h3>Auberge Le Panier</h3>
-					<p>Nuit à partir de <strong>23€</strong></p>
+					<p>Nuit à partir de <span>23€</span></p>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
-						<i class="far fa-star"></i>
+						<i class="fas fa-star star-empty"></i>
 					</div>
 				</a>
 			</figure>
@@ -176,7 +177,7 @@
 				<img class="hotel-image" src="images/amina.jpg" alt="Hôtel chez Amina" />
 				<div class="caption">
 					<h3>Hôtel Chez Amina</h3>
-					<p>Nuit à partir de 96<strong>€</strong></p>
+					<p>Nuit à partir de 96<span>€</span></p>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
@@ -187,7 +188,7 @@
 			</figure>
 
 		</div>
-		<a href="#"><h3><strong>Afficher plus</strong></h3></a>
+		<a href="#"><h3><span>Afficher plus</span></h3></a>
 		</div>
 
 
@@ -208,7 +209,7 @@
 				<img class="popular-hotel-img" src="images/soleildumatin.jpg" alt="Hôtel Le Soleil du matin"  />
 				<div class="caption-popular">
 					<h3>Hôtel Le Soleil du Matin</h3>
-					<p>Nuit à partir de 128<strong>€</strong></p>
+					<p>Nuit à partir de 128<span>€</span></p>
 					<div class="popular-star">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
@@ -227,13 +228,13 @@
 				<img class="popular-hotel-img" src="images/coeurdeleau.jpg" alt="Au Cœur de L'eau" />
 				<div class="caption-popular">
 					<h3>Au Cœur de l'Eau Chambres d'Hôtes</h3>
-					<p>Nuit à partir de 71<strong>€</strong></p>
+					<p>Nuit à partir de 71<span>€</span></p>
 					<div class="popular-star">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
-						<i class="far fa-star"></i>
+						<i class="fas fa-star star-empty"></i>
 					</div>
 					</div>
 			</figure>
@@ -245,13 +246,13 @@
 				<img class="popular-hotel-img" src="images/toutbleuetblanc.jpg" alt="Hôtel Tout Bleu et Blanc" />
 				<div class="caption-popular">
 					<h3>Hôtel Tout Bleu et Blanc</h3>
-					<p>Nuit à partir de 68<strong>€</strong></p>
+					<p>Nuit à partir de 68<span>€</span></p>
 					<div class="popular-star">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
-						<i class="far fa-star"></i>
+						<i class="fas fa-star star-empty"></i>
 					</div>
 					</div>
 			</figure>
@@ -288,7 +289,7 @@
 
 				<figure class="activity-tile act-tile-2">
 					<a href="#">
-					<img class="activity-img" src="images/act2-fort.jpg" alt="Fort de Pomégues" />
+					<img class="activity-img-med" src="images/act2-fort.jpg" alt="Fort de Pomégues" />
 					<div class="caption-act">
 						<h3>Fort de Pomégues</h3>
 					</div>
@@ -298,7 +299,7 @@
 
 				<figure class="activity-tile act-tile-3">
 					<a href="#">
-					<img class="activity-img" src="images/act3-frioul.jpg" alt="Îles du Frioul" />
+					<img class="activity-img-small" src="images/act3-frioul.jpg" alt="Îles du Frioul" />
 					<div class="caption-act">
 						<h3>Îles du Frioul</h3>
 					</div>

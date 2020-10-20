@@ -4,15 +4,19 @@ body {
 	margin: auto;
 }
 
+
+
 header {
 	width: 100%;
 	position: fixed;
+	z-index: 3;
 	background-color: white;
 	color: #0065FC;
 	display: grid;
 	align-items: center;
 	grid-template-columns: auto 1fr auto auto;
 	grid-template-areas: "logo . navbar register"
+
 }
 
 
@@ -60,6 +64,9 @@ footer ul {
 	line-height: 2em;
 }
 
+span {
+	font-weight: bold;
+}
 
 
 
@@ -102,6 +109,7 @@ footer ul {
 	display: flex;
 	color: black;
 	grid-area: navbar;
+	
 	
 }
 
@@ -182,21 +190,7 @@ margin-top: 2em;
 	cursor: pointer;
 }
 
-#filter-content :hover {
-	background-color: #0065FC;
-	color: white;
-}
 
-.filter-name {
-	display: flex;
-	border: 2px solid;
-	border-color: #F2F2F2;
-	border-radius: 30px;
-	margin-right: 10px;
-	width: auto;
-	padding-right: 20px;
-	
-}
 
 
 
@@ -408,7 +402,7 @@ float: left;
   padding: 10px 50px;
   text-decoration: none;
   font-size: 15px;
-  
+  border-top: 3px solid rgba(0,0,0,0);
 }
 
 .register-btn {
@@ -428,7 +422,7 @@ float: left;
 	border-radius: 16px 0 0 16px;
 }
 
-.submit-search {
+.submit-search , .submit-search-mobile {
 	color: white;
 	padding: 15px 15px;
 	background-color: #0065FC;
@@ -437,6 +431,24 @@ float: left;
 	font-size: 16px;
 }
 
+.submit-search-mobile {
+	display: none;
+}
+
+
+@media all and (max-width: 768px) {
+	.submit-search {
+		display: none;
+	}
+
+	.submit-search-mobile {
+		display: block;
+	}
+}
+
+
+
+
 .filter-icon {
 	display: flex;
 	background-color: #DEEBFF;
@@ -444,20 +456,49 @@ float: left;
 	border-radius: 100%;
 	align-items: center;
 	justify-content: center;
-	padding: 15px;
-	margin-inline-start: -5px;
+	padding: 16px;
+	margin-right: -40px;
+	z-index: 1;
+}
+
+.filter-icon:hover + .filter-button {
+	background-color: #0065FC;
+	color: white;
 }
 
 .filter-button {
 width: auto;
 height: auto;
-padding: 10px 10px 10px 10px;
-border: none;
+padding: 10px 20px 10px 50px;
+border: 2px solid;
+border-color: #F2F2F2;
 background-color: white;
-border-radius: 16px;
+border-radius: 30px;
 margin-top: 2px;
 font-weight: bold;
 cursor: pointer;
+margin-right: 10px;
+z-index: 0;
+}
+
+.filter-name {
+	display: flex;
+	width: auto;
+	
+}
+
+.filter-button:hover {
+	background-color: #0065FC;
+	color: white;
+}
+
+
+.fa-heart {
+	padding: 18px 19px;
+}
+
+.fa-child {
+	padding: 18px 20px;
 }
 
 .fa-info {
@@ -472,7 +513,7 @@ cursor: pointer;
 
 
 .hotel-list {
-width: 220px;
+width: 240px;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 25px;
@@ -481,13 +522,26 @@ width: 220px;
   margin: 0 10px;
   margin-bottom: 30px;
   margin-top: 20px;
+  position: relative;
+}
 
+.hotel-list a::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .caption {
 	color: black;
 	line-height: 0.5em;
-	
+	padding-left: 15px;
+}
+
+.fa-star.star-empty {
+	color: #F2F2F2;
 }
 
 .fa-star {
@@ -561,13 +615,14 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
 .act-tile-2 {
 	margin-right: 20px;
 	margin-bottom: 20px;
+	height: fit-content;
 }
 
 .act-tile-3 {
 	grid-column: 2/span 1;
 	grid-row: 2/span 1;
 	margin-right: 20px;
-	margin-top: 20px;
+	margin-top: 60px;
 }
 
 .act-tile-4 {
@@ -591,6 +646,24 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
 
 .activity-img {
 height: 150px;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 1em 1em 0px 0px;
+	padding: 0px;
+
+}
+
+.activity-img-med {
+height: 190px;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 1em 1em 0px 0px;
+	padding: 0px;
+
+}
+
+.activity-img-small {
+height: 100px;
 	width: 100%;
 	object-fit: cover;
 	border-radius: 1em 1em 0px 0px;
